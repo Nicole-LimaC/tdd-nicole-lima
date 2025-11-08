@@ -14,4 +14,9 @@ public class ContaBancaria {
     public double getSaldo() {
         return saldo;
     }
+
+    public double consultarSaldo() {
+        double extratoConta = saldo;
+        return extratoConta;
+    }
 }
