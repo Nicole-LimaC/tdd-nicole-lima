@@ -6,6 +6,13 @@ public class ContaBancaria {
         saldo += valor;
     }
 
+    public void sacar(double valor) {
+        if (valor > saldo) {
+            return;
+        }
+        saldo = saldo - valor;
+    }
+
     public double getSaldo() {
         return saldo;
     }
