@@ -17,4 +17,13 @@ public class ContaBancariaTest {
         conta.sacar(40);
         assertEquals(60, conta.getSaldo(), 0.001);
     }
+
+    @Test
+    public void deveConsultarSaldoAposSaque() {
+        ContaBancaria conta = new ContaBancaria();
+        conta.depositar(100);
+        conta.sacar(40);
+        double saldo = conta.consultarSaldo();
+        assertEquals(60, saldo, 0.001);
+    }
 }
